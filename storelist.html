@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store List - The Falcon's Orders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles from index page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a; /* Deep black background */
+            color: #e0e0e0; /* Light gray text */
+            font-family: 'Roboto Mono', monospace;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .glitch-container {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            color: #FFD700; /* Metallic gold */
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Gold glow */
+        }
+
+        .nav-link {
+            color: #e0e0e0; /* Light gray for links */
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #FFD700; /* Gold on hover */
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #FFD700; /* Gold underline */
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Store List Specific Styles */
+        .store-list-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 1rem;
+            background: #00141e; /* Dark navy blue background */
+            border: 1px solid #FFD700; /* Gold border */
+            border-radius: 4px;
+            color: #FFD700; /* Gold text */
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .search-bar::placeholder {
+            color: #FFD700; /* Gold placeholder text */
+            opacity: 0.7;
+        }
+
+        .stores-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #00141e; /* Dark navy blue background */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .stores-table th {
+            background: #002837; /* Slightly lighter navy blue for headers */
+            color: #FFD700; /* Gold text */
+            padding: 1.2rem;
+            text-align: left;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .stores-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #003747; /* Darker navy blue for borders */
+        }
+
+        .stores-table tr:nth-child(even) {
+            background: #001a25; /* Alternate row color */
+        }
+
+        .store-name {
+            color: #FFD700; /* Gold text for store names */
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .store-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            background: #004455; /* Dark teal for icons */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fee-badge {
+            background: #FFD70022; /* Semi-transparent gold background */
+            color: #FFD700; /* Gold text */
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div id="currency-container"></div>
+
+    <div class="glitch-container">
+        <h1 class="logo" data-text="SUPPORTED STORES">SUPPORTED STORES</h1>
+        <nav>
+            <a href="index.html" class="nav-link">← Return to Previous Page</a>
+        </nav>
+    </div>
+
+    <div class="store-list-container">
+        <input type="text" class="search-bar" placeholder="Search for stores...">
+
+        <table class="stores-table">
+            <thead>
+                <tr>
+                    <th>Store Name</th>
+                    <th>Max Order</th>
+                    <th>Max Items</th>
+                    <th>Timeframe</th>
+                    <th>Rebill</th>
+                    <th>Fee</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            <div class="store-flags">🇺🇸</div>
+                            <div class="store-flags">🇺🇸</div>
+                            Amazon
+                        </div>
+                    </td>
+                    <td>$20000</td>
+                    <td>5</td>
+                    <td>1-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">25%</span></td>
+                    <td> Items must be shipped by .
+                         Lockers|Counters orders accepted.
+                         OTP orders accepted.
+                         No Previous OFM|Closed accounts.
+                         No Reships.
+                         No previous refunds.
+                         Aged Account</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Samsung
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>2</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">15%</span></td>
+                    <td>Create account, Fresh works, Repeatable, Phone Fastest</td>
+                </tr>
+                
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Simple search functionality
+        document.querySelector('.search-bar').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('.stores-table tbody tr');
+            
+            rows.forEach(row => {
+                const storeName = row.querySelector('.store-name').textContent.toLowerCase();
+                row.style.display = storeName.includes(searchTerm) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
