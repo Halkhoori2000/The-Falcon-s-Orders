@@ -87,12 +87,17 @@
             opacity: 0.7;
         }
 
+        .table-container {
+            overflow-x: auto;
+        }
+
         .stores-table {
             width: 100%;
             border-collapse: collapse;
             background: #00141e; /* Dark navy blue background */
             border-radius: 8px;
             overflow: hidden;
+            min-width: 800px; /* Ensure the table has a minimum width */
         }
 
         .stores-table th {
@@ -154,41 +159,50 @@
     <div class="store-list-container">
         <input type="text" class="search-bar" placeholder="Search for stores...">
 
-        <table class="stores-table">
-            <thead>
-                <tr>
-                    <th>Store Name</th>
-                    <th>Max Order</th>
-                    <th>Max Items</th>
-                    <th>Timeframe</th>
-                    <th>Rebill</th>
-                    <th>Fee</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="store-name">
-                            <div class="store-flags">🇺🇸</div>
-                            <div class="store-flags">🇺🇸</div>
-                            <div class="store-flags">🇺🇸</div>
-                            Amazon
-                        </div>
-                    </td>
-                    <td>$20000</td>
-                    <td>5</td>
-                    <td>1-5d</td>
-                    <td>No</td>
-                    <td><span class="fee-badge">25%</span></td>
-                    <td> Items must be shipped by .
-                         Lockers|Counters orders accepted.
-                         OTP orders accepted.
-                         No Previous OFM|Closed accounts.
-                         No Reships.
-                         No previous refunds.
-                         Aged Account</td>
-                </tr>
+        <div class="table-container">
+            <table class="stores-table">
+                <thead>
+                    <tr>
+                        <th>Store Name</th>
+                        <th>Max Order</th>
+                        <th>Max Items</th>
+                        <th>Timeframe</th>
+                        <th>Rebill</th>
+                        <th>Fee</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="store-name">
+                                <div class="store-flags">🇺🇸</div>
+                                <div class="store-flags">🇬🇧</div>
+                                <div class="store-flags">🇨🇦 </div>
+                                <div class="store-flags">🇦🇺 </div>
+                                <div class="store-flags">🇩🇪</div>
+                                <div class="store-flags">🇪🇸</div>
+                                <div class="store-flags">🇮🇹 </div>
+                                <div class="store-flags">🇳🇱</div>
+                                <div class="store-flags">🇫🇷</div>
+                                <div class="store-flags">🇵🇱</div>
+                                Amazon
+                            </div>
+                        </td>
+                        <td>$20000</td>
+                        <td>5</td>
+                        <td>1-5d</td>
+                        <td>No</td>
+                        <td><span class="fee-badge">15%</span></td>
+                        <td> Items must be shipped by .
+                             Lockers|Counters orders accepted.
+                             OTP orders accepted.
+                             No Previous OFM|Closed accounts.
+                             No Reships.
+                             No previous refunds.
+                             Aged Account</td>
+                    </tr>
+
                 <tr>
                     <td>
                         <div class="store-name">
@@ -201,12 +215,2035 @@
                     <td>0-14d</td>
                     <td>No</td>
                     <td><span class="fee-badge">15%</span></td>
+                    <td>Create account, Fresh works, Repeatable, Phone Fastest,Standard delivery</td>
+                </tr>
+
+                 <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Apple
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>1</td>
+                    <td>0-2d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">15%</span></td>
+                    <td>Aged accounts=better sr, no previous refunds, no guest, usually replacements</td>
+                </tr>
+
+                 <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Sam's Club
+                        </div>
+                    </td>
+                    <td>$9000</td>
+                    <td>5</td>
+                    <td>0-2d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">15%</span></td>
+                    <td>Instant Replacement, Aged Acc, must have membership</td>
+                </tr>
+
+                 <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Lenovo
+                        </div>
+                    </td>
+                    <td>$10000</td>
+                    <td>1</td>
+                    <td>0-2d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">13%</span></td>
+                    <td>Instant Replacement, Use Paypal for double dip</td>
+                </tr>
+
+                 <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            GoogleStore
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>2</td>
+                    <td>0-4d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">15%</span></td>
                     <td>Create account, Fresh works, Repeatable, Phone Fastest</td>
                 </tr>
-                
-                <!-- Add more rows as needed -->
-            </tbody>
-        </table>
+
+                 <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Microsoft
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>1</td>
+                    <td>0-8d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">15%</span></td>
+                </tr>
+
+                  <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Nikon
+                        </div>
+                    </td>
+                    <td>$8000</td>
+                    <td>1</td>
+                    <td>0-6d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">15%</span></td>
+                </tr>
+
+                  <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            HP
+                        </div>
+                    </td>
+                    <td>$10000</td>
+                    <td>1</td>
+                    <td>0-8d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">15%</span></td>
+                </tr>
+
+                  <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            PlaystationDirect
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>2</td>
+                    <td>0-2d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">15%</span></td>
+                    <td>Double dip possible</td>
+                </tr>
+
+                  <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            IRobot
+                        </div>
+                    </td>
+                    <td>$9000</td>
+                    <td>2</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">15%</span></td>
+                    <td>If bundles just one item</td>
+                </tr>
+
+ <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Ring
+                        </div>
+                    </td>
+                    <td>$4000</td>
+                    <td>20</td>
+                    <td>0-12d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">13%</span></td>
+                    <td>No bundles</td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸🇨🇦</div>
+                            TenThousand.cc
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>20</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">10%</span></td>
+                    <td>Repetable</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            eu.killstar.com
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                       <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ForLoveandLemons
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                       <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Baobabclothing
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ByltBasics
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                       <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            DenimTears
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            AdveneDesign
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            OxfordPennant
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            OruKayak
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            260SampleSale
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Bchtechnologies
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ChasingPaper
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Music.BackStreetBoys
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BarnesFoundation
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BPISports
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BBCIceCream
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            TeamNeverGuilt
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            CynthiaRowley
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BlueOrigin
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BradleySmoker
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            KateasPen
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Newair
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            KingIce
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            TrutechTools
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Tiege
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Family.KaneBrownMusic
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ThomasSanders
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            CMAWorkd
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Oembimmerparts
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Nicalis
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ChicagoHistory
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Tarantacticalinnovations
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            TitanFitness
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BlackHairSpray
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ControllerChaos
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BigDogs
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            TheWesternCompany
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BicycleWarehouse
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ThePorchSwingCompany
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Brckhmptn
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            TetonGravity
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ChildishGambino
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Campmor
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Nrsworld
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            CandyWarehouse
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BeachBunnySwimwear
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ChubbiesShorts
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Kinobody
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            TeeTurtle
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            OverWatchLeague
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+ <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            CallOfDuty
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            TheWalkingCompany
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ToysRUs
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Bonappetit
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            gear.blizzard
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            NewYorker
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Curated
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>No Final Sale,Repeatable</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Meta
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>3</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">13%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Gazelle
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>2</td>
+                    <td>0-30d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">13%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BackMarket
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>2</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">13%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Jansport
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>5</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            OuterKnown
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>20</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            LoveSac
+                        </div>
+                    </td>
+                    <td>$10000</td>
+                    <td>3</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">13%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Gap
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>20</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">10%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            CBSdeals
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            1800Flowers
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>5</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">10%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Monos
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>3</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">13%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Nectar
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>1</td>
+                    <td>0-3d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">10%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Arlo
+                        </div>
+                    </td>
+                    <td>$2500</td>
+                    <td>20</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                      <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            WellBots
+                        </div>
+                    </td>
+                    <td>$4000</td>
+                    <td>2</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            FragranceNet
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>5</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Hedley&Bennet
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>2</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            GymShark
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>30</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Pandora
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Sears
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>2</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Ruggable
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>3</td>
+                    <td>0-10d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">10%</span></td>
+                    <td>No Final Sale & Furniture</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Rhone
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>15</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BestBuy
+                        </div>
+                    </td>
+                    <td>$4000</td>
+                    <td>1</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">10%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Target
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>2</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>No PO Boxes</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            TireRack
+                        </div>
+                    </td>
+                    <td>$1500</td>
+                    <td>6</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            MLBShop
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>20</td>
+                    <td>0-3d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Levis
+                        </div>
+                    </td>
+                    <td>$1500</td>
+                    <td>30</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Asos
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>5</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Asus
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>1</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            JDSports
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>5</td>
+                    <td>0-10d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Nike
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-35d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">10%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            TikTokShop
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>2</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">10%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            L'angeHair
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>5</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            JenniKayne
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>3</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            HellyHansen
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>3</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            DavidYurman
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>3</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            HestraGloves
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>5</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Anthropologie
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>10</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            PatrickTa
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>10</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            HourGlass
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>10</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Versace
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>2</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ShopPremiumOutlets
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>10</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>Big Sellers Only, One Seller at a Time</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Oradina
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-28d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Malbon
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-28d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            GladeOptics
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>5</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Vuori
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>5</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            KMotorPerformance
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>4</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>No Custom Items</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            AutomotiveStuff
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>4</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BergdorfGoodman
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>3</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Remarkable
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>3</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            1010Tires
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>5</td>
+                    <td>0-10d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>Must Buy Route Protection</td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            AmericanMuscle
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>10</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            CarID
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>5</td>
+                    <td>0-28d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            CarParts
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>5</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            ExtremeTrain
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>10</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            JeepWorld
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>5</td>
+                    <td>0-10d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            RockAuto
+                        </div>
+                    </td>
+                    <td>$4000</td>
+                    <td>10</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            RoughCountry
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>5</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            SummitRacing
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>5</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            XtremeDiesel
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>5</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Aesop
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>20</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            AwayTravel
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>3</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BeisTravel
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            BuyBuyBaby
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>10</td>
+                    <td>0-5d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            LandsEnd
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>10</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Chewy
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>30</td>
+                    <td>0-7d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            NestNewYork
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>20</td>
+                    <td>0-10d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Jambys
+                        </div>
+                    </td>
+                    <td>$1500</td>
+                    <td>30</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>No Final Sale</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Cotopaxi
+                        </div>
+                    </td>
+                    <td>$1500</td>
+                    <td>30</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>No Final Sale</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            EddieBauer
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>30</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>No Final Sale</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Revolve
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>20</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            MooseKnuckles
+                        </div>
+                    </td>
+                    <td>$2000</td>
+                    <td>5</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>No Final Sale</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            WeatherTech
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>4</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td>Shipping Protection</td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            MDesign
+                        </div>
+                    </td>
+                    <td>$500</td>
+                    <td>5</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Swarovski
+                        </div>
+                    </td>
+                    <td>$1500</td>
+                    <td>30</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Moncler
+                        </div>
+                    </td>
+                    <td>$3000</td>
+                    <td>2</td>
+                    <td>0-40d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            NeimanMarcus
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>3</td>
+                    <td>0-21d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            KateSpade
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                    <td>3</td>
+                    <td>0-14d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                     <tr>
+                    <td>
+                        <div class="store-name">
+                            <div class="store-flags">🇺🇸</div>
+                            Hermes
+                        </div>
+                    </td>
+                    <td>$5000</td>
+                    <td>2</td>
+                    <td>0-28d</td>
+                    <td>No</td>
+                    <td><span class="fee-badge">7%</span></td>
+                    <td></td>
+                </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script>
